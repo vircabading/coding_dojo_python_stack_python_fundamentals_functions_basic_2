@@ -20,10 +20,16 @@ def countdown(high_number) -> list:
 
 print(countdown(5))
 
-"""
 # /////////////////////////////////////////////////////////////
-print_desc("2.")
+print_desc("2. Print and Return")
 
+def print_and_return(number_list):
+    print (f"printing first number in list: {number_list[0]}")
+    return number_list[1]
+
+print("Number returned from print_and_return([1,2]) is", print_and_return([1,2]))
+
+"""
 # /////////////////////////////////////////////////////////////
 print_desc("3.")
 
