@@ -58,8 +58,15 @@ print ("The list of numbers greater than the second index of [5,2,3,2,1,4] is", 
 print()
 print ("The list of numbers greater than the second index of [3] is", values_greater_than_second([3]))
 
-"""
 # /////////////////////////////////////////////////////////////
-print_desc("5.")
+print_desc("5. This Length, That Value")
 
-"""
+def length_and_value (length, value) -> list:
+    new_list = []
+    for idx in range (length):
+        new_list.append(value)
+    return new_list
+
+print( "length_and_value of (4,7) is", length_and_value(4,7))
+print()
+print( "length_and_value of (6,2) is", length_and_value(6,2))
