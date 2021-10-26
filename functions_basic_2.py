@@ -40,10 +40,25 @@ def first_plus_length (number_list):
 
 print ("first_plus_length of [1,2,3,4,5] is", first_plus_length([1,2,3,4,5]))
 
-"""
 # /////////////////////////////////////////////////////////////
-print_desc("4.")
+print_desc("4. Values Greater than Second")
 
+def values_greater_than_second (number_list) :
+    new_number_list = []
+    if len(number_list) < 2:
+        return False
+    else:
+        for idx in range (len(number_list)):
+            if number_list[idx] > number_list[1]:
+                new_number_list.append(number_list[idx])
+        print("The length of the new_number_list is", len(new_number_list))
+        return new_number_list
+
+print ("The list of numbers greater than the second index of [5,2,3,2,1,4] is", values_greater_than_second([5,2,3,2,1,4]))
+print()
+print ("The list of numbers greater than the second index of [3] is", values_greater_than_second([3]))
+
+"""
 # /////////////////////////////////////////////////////////////
 print_desc("5.")
 
